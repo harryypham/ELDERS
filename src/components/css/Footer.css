@@ -1,0 +1,53 @@
+#bg-footer-container {
+  width: 100vw;
+  height: 30vh;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 5vw;
+  position: relative;
+  box-sizing: border-box !important;
+  overflow: hidden;
+}
+#logo {
+  padding-right: 5vw;
+}
+.mt-12 {
+  margin-top: 12.5vh;
+}
+#footer-nav {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.footer-nav-ele {
+  padding: 5px 0;
+}
+.footer-nav-ele a {
+  color: #000;
+  text-decoration: none;
+}
+#subscribe-form {
+  font-size: 1rem;
+  position: absolute;
+  right: 10vw;
+}
+#subscribe-form input {
+  width: 75%;
+  min-height: 40px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+#subscribe-form button {
+  width: 23%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  min-height: 40px;
+  box-sizing: border-box;
+  margin-left: 5px;
+}

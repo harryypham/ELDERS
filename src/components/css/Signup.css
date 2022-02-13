@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Circular Pro Medium";
+  src: url("./../fonts/CircularPro-Medium.6d9ac4df.woff2") format("woff2");
+}
+#signup-img-container {
+  background-image: url("https://earrialk.sirv.com/259761968_1170211593796436_6486526397349785044_n.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Circular Pro Medium", sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  background-blend-mode: darken;
+}
+#signup-form {
+  max-width: 500px;
+  height: fit-content;
+  border: none;
+}
+#signup-bg-container {
+  padding-top: 2%;
+}

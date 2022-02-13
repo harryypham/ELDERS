@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Circular Pro Medium";
+  src: url("./../fonts/CircularPro-Medium.6d9ac4df.woff2") format("woff2");
+}
+#login-img-container {
+  background-image: url("https://earrialk.sirv.com/259761968_1170211593796436_6486526397349785044_n.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Circular Pro Medium", sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+#facebook-logo,
+#google-logo {
+  width: 7.5%;
+  margin-right: 10px;
+}
+#facebook-login:hover {
+  background: #1a77f2 !important;
+}
+#login-form {
+  max-width: 500px;
+  height: fit-content;
+  border: none;
+}

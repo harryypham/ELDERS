@@ -1,0 +1,4 @@
+.person-container .col,
+.person-container .row {
+  overflow: hidden;
+}

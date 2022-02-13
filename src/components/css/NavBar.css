@@ -1,0 +1,27 @@
+#navBar-container {
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#navBar {
+  margin: 0 !important;
+}
+#signup-login {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  margin-right: 5vw;
+  align-items: flex-start;
+}
+#navbar-toggle {
+  position: absolute;
+  right: 0;
+  margin-right: 0.5vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logOut-link {
+  text-decoration: none;
+}

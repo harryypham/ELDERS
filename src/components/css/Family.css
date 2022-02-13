@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap");
+@font-face {
+  font-family: "Thunder";
+  src: url("./../fonts/Thunder-BlackLC.ttf") format("truetype");
+}
+.loader {
+  background-color: #5ee0c2;
+}
+.loader .title {
+  position: relative;
+  top: 10vh;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px #5ef9c2;
+  color: #5ee0c2;
+  padding: 0;
+}
+.loader .title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -webkit-text-stroke: 0vw #5ef9c2;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.people-title {
+  font-size: 4rem;
+}
+.girl-wave {
+  top: 0;
+  right: 0;
+}
+.card-people {
+  text-align: left;
+  border: none;
+  min-width: 250px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px #d9d9d9, -5px -5px 15px #ffffff;
+  transition: transform 0.5s;
+}
+.card-people .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-people .card-text {
+  margin: 0;
+}
+.card-people .card-text ul li {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.card-people:hover {
+  transform: scale(1.05);
+}
+.card-image {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+.col-add,
+.col-add:focus {
+  outline: none !important;
+  border: none !important;
+}
+.card-add {
+  height: 100%;
+
+  user-select: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #d9d9d9, -5px -5px 15px #ffffff;
+}
+.btn-add:focus,
+*:focus,
+.modal:focus,
+button:focus {
+  outline: none !important;
+}
+
+.card-add .card-title {
+  font-size: 1.5rem;
+  color: #38e9be;
+}
+.card-add .card-img-top {
+  height: 23vh;
+}
+.modal-dialog {
+  width: 40%;
+}
+.fa-facebook {
+  color: #1a77f2;
+}
+.fa-instagram {
+  color: #d14c64;
+}
+.fa-twitter {
+  color: #49a2eb;
+}
+.red .card-title,
+.blue .card-title,
+.green .card-title,
+.purple .card-title,
+.pink .card-title,
+.orange .card-title {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+.red .card-title,
+.red hr {
+  background: -webkit-linear-gradient(45deg, #9d316e, #de2d3e);
+}
+.blue .card-title,
+.blue hr {
+  background: -webkit-linear-gradient(45deg, #0947db, #07d89d);
+}
+.green .card-title,
+.green hr {
+  background: -webkit-linear-gradient(45deg, #00ac53, #23c3e0);
+}
+.purple .card-title,
+.purple hr {
+  background: -webkit-linear-gradient(45deg, #3a3d98, #6f22b9);
+}
+.pink .card-title,
+.pink hr {
+  background: -webkit-linear-gradient(45deg, #f19872, #e86c9a);
+}
+.orange .card-title,
+.orange hr {
+  background: -webkit-linear-gradient(45deg, #ee2d29, #f8ae2c);
+}
+.card-people hr {
+  height: 3px;
+}
+.linear-wipe {
+  text-align: center;
+  /* background: linear-gradient(
+    to right,
+    #5b61dc 0%,
+    #fd0033 20%,
+    #a0e4a6 50%,
+    #002afa 100%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* animation: shine 3s linear infinite; */
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}

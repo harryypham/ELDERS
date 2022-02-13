@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "TuskerGrotesk Bold";
+  src: url("./../fonts/TuskerGrotesk-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Soehne";
+  src: url("./../fonts/soehne-web-halbfett.f7dddd91.woff2") format("woff2");
+}
+.bucketlist-bg-container,
+.inspiration-bg-container {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+.bucketlist-bg-container .col,
+.inspiration-bg-container .col {
+  padding: 0;
+  margin: 0;
+}
+.bucketlist-bg-container .col a,
+.inspiration-bg-container .col a {
+  width: 100%;
+  padding: 0;
+}
+.inspiration-bg-container h1 {
+  font-family: "Soehne";
+  font-size: clamp(8.895rem, 16vw, 37.678rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+}
+.topic-container {
+  height: calc(100vw / 3);
+  width: 100%;
+  overflow: hidden;
+}
+.topic-container:hover .topic-content {
+  transform: scale(1.05);
+}
+.topic-content {
+  transition: transform 0.5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+.topic-title {
+  font-family: "TuskerGrotesk Bold";
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+}
+.marquee {
+  height: 141px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 141px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  animation: marquee 5s linear infinite;
+  -webkit-animation: marquee 5s linear infinite;
+  white-space: nowrap;
+}
+/* .marquee span {
+    float: left;
+    width: 25%;
+    font-size: 2rem;
+  } */
+
+.marquee .outer {
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
+  float: left;
+  width: calc((100% / 8) - 40px);
+  margin: 0 20px;
+}
+.marquee .outer span {
+  font-size: 7rem;
+  line-height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-family: "Thunder";
+  font-weight: 900;
+}
+.marquee .outer img {
+  width: auto;
+  height: 140px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -60px;
+}
+.marquee-left {
+  height: 141px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-left div {
+  display: block;
+  width: 200%;
+  height: 141px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  animation: marquee-left 5s linear infinite !important;
+  -webkit-animation: marquee-left 5s linear infinite !important;
+  white-space: nowrap;
+}
+
+.marquee-left .outer {
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
+  float: left;
+  width: calc((100% / 12) - 40px);
+  margin: 0 20px;
+}
+.marquee-left .outer span {
+  font-size: 7rem;
+  line-height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-family: "Thunder";
+  font-weight: 900;
+}
+.marquee-left .outer img {
+  width: auto;
+  height: 140px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -60px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@keyframes marquee {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes marquee-left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.simple-loader {
+  background-size: cover;
+  background-position: center;
+}
+.simple-loader h2 {
+  font-size: 3rem;
+  color: #fff;
+}
